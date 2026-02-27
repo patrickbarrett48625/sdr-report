@@ -23,6 +23,9 @@
     td { padding: 12px; border-bottom: 1px solid #f5f3ff; }
     tr:last-child td { border-bottom: none; }
     .ww-team-row td { background: #EDEDFA; border-top: 2px solid #d8d6f5; }
+    .glossary-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px 32px; }
+    .glossary-term { font-size: 0.85rem; font-weight: 700; color: #5856D6; margin-bottom: 4px; }
+    .glossary-def { font-size: 0.85rem; color: #86868b; line-height: 1.4; }
     footer { text-align: center; color: #86868b; font-size: 0.8rem; padding: 16px 0 40px; }
     .hm-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
     .hm-agent-block { overflow-x: auto; }
@@ -48,6 +51,28 @@
     </div>
   </header>
   <div class="container">
+
+    <div class="section" style="margin-bottom:24px">
+      <h2>Metric Definitions</h2>
+      <div class="glossary-grid">
+        <div class="glossary-item">
+          <div class="glossary-term">Contact Rate</div>
+          <div class="glossary-def">The percent of all calls that are answered.</div>
+        </div>
+        <div class="glossary-item">
+          <div class="glossary-term">Call 1 Success Rate</div>
+          <div class="glossary-def">The percent of answered Call 1&rsquo;s where we obtain the OM&rsquo;s name.</div>
+        </div>
+        <div class="glossary-item">
+          <div class="glossary-term">DM Engage Rate</div>
+          <div class="glossary-def">The percent of Call 2&rsquo;s where we successfully get the OM on the phone.</div>
+        </div>
+        <div class="glossary-item">
+          <div class="glossary-term">Set Rate</div>
+          <div class="glossary-def">The percent of OM engagements where we successfully set a demo.</div>
+        </div>
+      </div>
+    </div>
 
     <div class="kpi-grid">
     <div class="kpi-card">
@@ -243,7 +268,7 @@
       </div>
     </div>
 
-    <footer>Generated 2026-02-27 13:29 &mdash; Call_Disposition_Logs(2026-01-27-2026-02-26)-20260226 (1).csv</footer>
+    <footer>Generated 2026-02-27 13:35 &mdash; Call_Disposition_Logs(2026-01-27-2026-02-26)-20260226 (1).csv</footer>
   </div>
 </body>
 </html>
